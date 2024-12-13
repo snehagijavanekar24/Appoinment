@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block start %}
+<div class="container mt=5">    
+
+</div>
+{% endblock %}{% extends "base.html" %}
+
+{% block start %}
+<div class="container mt=5">
+
+
+
+        {% csrf_token %}
+        <h2>Add client</h2>
+        <div class="card">
+          </div>
+        <div class="mb-3">
+          client_id
+          <input name="client_id" type="number" class="form-control" >
+        </div>
+        <div class="mb-3">
+          service_id
+          <input  name="service_id"  type="number" class="form-control">
+        </div>
+        <div >
+            scheduled_date
+            <input name="scheduled_date"  type="date" class="form-control" >
+          </div>
+          <div class="mb-3">
+             status
+             <input name="status"  type="text" class="form-control" >
+           </div>
+        
+        <button type="submit" class="btn btn-success">Add client</button>
+      </form>
+
+    
+
+</div>
+{% endblock %}

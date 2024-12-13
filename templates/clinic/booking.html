@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block start %}
+{{request.user}}
+<div class="container mt=5">
+
+
+       {% csrf_token %}
+       <h2>Add client</h2>
+       <div class="card">
+         </div>
+       <div class="mb-3">
+         Client Id
+         <input name="client_id" type="number" class="form-control" >
+       </div>
+       <div class="mb-3">
+         Service Id
+         <input  name="service_id"  type="number" class="form-control">
+       </div>
+       <div class="mb-3">
+           Scheduled Date
+           <input name="scheduled_date"  type="date" class="form-control" >
+         </div>
+         <div class="mb-3">
+            Status
+            <input name="status"  type="text" class="form-control" >
+          </div>
+       
+       <button type="submit" class="btn btn-success">Add client</button>
+     </form>
+
+</div>
+       
+{% endblock %}
